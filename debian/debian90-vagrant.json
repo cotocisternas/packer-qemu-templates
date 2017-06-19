@@ -53,6 +53,7 @@
       "type": "shell",
       "execute_command": "echo '{{ user `password` }}' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'",
       "scripts": [
+        "scripts/fix-grub.sh",
         "scripts/update.sh",
         "scripts/packages.sh",
         "scripts/vagrant.sh",
