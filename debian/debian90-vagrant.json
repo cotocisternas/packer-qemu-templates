@@ -37,6 +37,8 @@
         "priority=critical ",
         "interface=auto ",
         "url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+        "net.ifnames=0 ",
+        "biosdevname=0 ",
 
         "passwd/user-fullname={{ user `user` }} ",
         "passwd/user-password={{ user `password` }} ",
