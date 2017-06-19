@@ -6,4 +6,4 @@ curl
 vim
 htop
 "
-aptitude -y install --without-recommends $PACKAGES
+apt-get -y install $PACKAGES
