@@ -46,6 +46,11 @@ rm -f /home/vagrant/.bash_history
 echo "==> Purging log files"
 find /var/log -type f -delete
 
+# Zero out the free space
+echo "==> Zeroing the disk"
+dd if=/dev/zero of=/EMPTY bs=1M
+rm -f /EMPTY
+
 # Skipping the whiteout part from box-cutter -- which would just fill up the qcow2 image
 
 # # Whiteout root
