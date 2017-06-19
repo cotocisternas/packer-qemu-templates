@@ -13,4 +13,4 @@ chmod 0600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant:vagrant /home/vagrant/.ssh
 
 # NFS used for file syncing
-apt-get --yes install nfs-common
+# apt-get --yes install nfs-common

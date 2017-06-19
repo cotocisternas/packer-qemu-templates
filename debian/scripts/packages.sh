@@ -1,19 +1,9 @@
 PACKAGES="
-acpid
-apt-file
-bind9-host
-bzip2
+apt-transport-https
+zsh
+git
 curl
-dnsutils
-emacs24-nox
+vim
 htop
-nmon
-ntp
-rsync
-slurm
-sudo
-tcpdump
-unzip
-vim-nox
 "
 aptitude -y install --without-recommends $PACKAGES
